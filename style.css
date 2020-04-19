@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Finger+Paint&family=Indie+Flower&display=swap');
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(50, 104, 205, 0.336);
+    color: black;
+    border-color: black;
+}
+
+a {
+    color: gray;
+}
+
+.dark {
+    background-color: rgb(6, 0, 31);
+    color: white;
+    border-color: white;
+}
+
+img {
+    float: right;
+    max-width: 100%;
+    margin: 10px;
+    height: auto;
+}
+
+header h1 {
+    margin-bottom: 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+header {
+    background-color: rgb(136, 168, 230);
+    width: 90%;
+    margin: auto;
+    padding-left: 20px;
+    border-bottom: solid 1px black;
+    border-radius: 50px;
+    box-shadow: 5px 3px 5px;
+}
+
+header div {
+    border-bottom: solid 1px black;
+}
+
+header p {
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    color: black;
+}
+
+.content h2 {
+    border-bottom: double 3px;
+}
+
+nav {
+    width: 0;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+nav h2 {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px rgb(129, 129, 129);
+    padding: 0 25px;
+    color: rgb(129, 129, 129);
+    font-family: 'Roboto';
+    transition: 0.3s;
+    margin: auto;
+}
+
+nav p {
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+nav #toggle {
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+
+.buton {
+    display: block;
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    border-bottom: solid 2px rgb(129, 129, 129);
+    padding: 0 25px;
+    color: rgb(129, 129, 129);
+    font-family: 'Roboto';
+}
+
+nav a:hover {
+    color: white;
+    font-size: 120%;
+}
+
+.cuprins {
+    width: 150px;
+    margin-left: 20px;
+    border: solid 1px gray;
+    padding-left: 15px;
+    background-color: rgba(50, 104, 205, 0.178);
+}
+
+.cuprins h3 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+
+.cuprins a {
+    display: block;
+    height: 30px;
+    color: blue;
+}
+
+.cuprins a:hover {
+    text-decoration: underline;
+}
+
+.continut {
+    transition: 0.3s;
+}
+
+
+/* .content {
+   display: flex;
+   flex-flow: row wrap;
+} */
+
+main {
+    width: 100%;
+    padding: 0 0 0 3px;
+    margin: 0 auto;
+}
+
+.galerie {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.galerie div {
+    border: solid 2px rgb(99, 99, 99);
+    margin: 2px auto;
+    text-align: center;
+}
+
+.galerie div a img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.galerie div:hover {
+    border: solid 2px;
+}
+
+aside {
+    width: 100%;
+    height: max-content;
+    border-top: solid 1px;
+    padding: 0 0 0 3px;
+    margin: 50px auto 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 60%;
+    }
+    aside {
+        width: 30%;
+        border-left: solid 1px;
+        border-top: none;
+    }
+    header p {
+        left: 80px;
+    }
+    .content {
+        display: flex;
+    }
+}
+
+.social a {
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    transition: 0.3s;
+    font-family: 'Finger Paint', cursive;
+    display: flex;
+    border-radius: 50px 0 0 50px;
+}
+
+#wapp {
+    background-color: green;
+    top: 30px;
+    width: 160px;
+    right: -110px;
+}
+
+#ig {
+    background-color: rgb(201, 30, 30);
+    top: 85px;
+    width: 210px;
+    right: -160px;
+}
+
+.social a i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#wapp:hover,
+#ig:hover {
+    right: 0;
+    font-size: 125%;
+}
+
+.info {
+    width: 96%;
+    height: auto;
+    padding: 0.3em 0.5em 0.5em 0.4em;
+    border-bottom: solid 1px;
+}
+
+.info img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
+.info a {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: solid 1px;
+    margin: auto;
+    padding: 7px 3px;
+}
+
+.info a:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+footer {
+    background-color: rgba(50, 104, 205, 0.164);
+    height: auto;
+    border-top: solid 1px rgb(94, 93, 93);
+    margin-top: 50px;
+}
+
+.stanga {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    float: left;
+}
+
+.stanga a:hover {
+    color: rgb(32, 32, 248);
+    text-decoration: underline;
+}
+
+.stanga a {
+    color: black;
+}
+
+.dreapta {
+    width: 50%;
+    height: max-content;
+    min-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+    float: left;
+}
+
+.jos {
+    border-top: solid 1px rgb(94, 93, 93);
+    height: 50px;
+    line-height: 50px;
+    clear: both;
+    text-align: center;
+}
+
+.jos h1 {
+    margin: 0;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    height: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+}

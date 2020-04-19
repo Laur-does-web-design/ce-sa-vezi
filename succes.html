@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeSăVezi.ro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icons/db.png">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="social">
+        <a id="wapp"><i class="fa fa-whatsapp"></i>
+            <div>0729235801</div>
+        </a>
+        <a href="https://www.instagram.com/viorelaurentiu/" target="_blank" id="ig"><i class="fa fa-instagram"></i>
+            <div>@viorelaurentiu</div>
+        </a>
+    </div>
+    <nav id="nav">
+        <p class="fa fa-times" style="font-size: 30px; cursor: pointer;" onclick="closeNav()"></p>
+        <i class="fa fa-adjust" id="toggle" style="font-size: 30px; cursor: pointer;" onclick="dark()"></i>
+        <h2>Meniu</h2>
+        <a href="index.html" class="buton"><i class="fa fa-home"></i> Acasă</a>
+        <a href="db/dambovita.html">Dâmbovița</a>
+        <a href="db/chindia.html">Turnul Chindiei</a>
+        <a href="db/munte.html">Munții Bucegi</a>
+        <a href="db/manastire.html">Mănăstirea Dealu</a>
+        <a href="db/muzeu.html">Muzeul de istorie</a>
+        <a href="db/palat.html">Palatul Brâncovenesc</a>
+        <a href="b/bucuresti.html" class="buton">București</a>
+        <a href="b/arc.html">Arcul de Triumf</a>
+    </nav>
+
+    <div class="continut" id="main">
+        <header>
+            <p class="fa fa-bars" style="font-size: 30px; cursor: pointer;" onclick="openNav()"></p>
+            <h1><a href="index.html" style="color:black">CeSăVezi.ro</a></h1>
+        </header>
+        <div style="text-align: center;" onclick="closeNav()">
+            <h1 style="font-size: 700%; text-align: center;">SUCCES!</h1>
+            <p>Comentariul tău a ajuns la noi.</p>
+            <p>Părerea ta este importantă pentru noi.</p>
+            <a href="index.html" style=" color: black;"><button style="border:none; background-color: gray; width: 100px; height: 50px">Acasă</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
